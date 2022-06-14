@@ -28,51 +28,49 @@
 			</div>
 		</header>
 
-		<form action="" method="POST">
+		<form action="" method="post">
 			{% csrf_token %}
 			<section class="contact-info">
 
-				<div class="info-line">
-					<i class="fas fa-phone icon-gradient"></i>
-					<input type="text" class="type" name="fullname" placeholder="Full Name">
-				</div>
+{#				<div class="info-line">#}
+{#					<i class="fas fa-phone icon-gradient"></i>#}
+{#					<input type="text" class="type" name="fullname" placeholder="Full Name">#}
+{#				</div>#}
+{##}
+{#				<div class="info-line">#}
+{#					<i class="fas fa-user-circle icon-gradient"></i>#}
+{#					<input type="text" class="type" name="relationship" placeholder="Relationship">#}
+{#				</div>#}
+{##}
+{##}
+{##}
+{#				<div class="info-line">#}
+{#					<i class="fas fa-sms icon-gradient"></i>#}
+{#					<input type="text" class="type" name="phone-number" placeholder="Phone Number">#}
+{#				</div>#}
+{##}
+{##}
+{##}
+{##}
+{#				<div class="info-line">#}
+{#					<i class="fas fa-map-marker-alt icon-gradient location"></i>#}
+{#					<input type="text" class="type" name="address" placeholder="Address">#}
+{#				</div>#}
+{##}
+{##}
+{#				<div class="info-line">#}
+{#					<i class="fas fa-envelope icon-gradient location"></i>#}
+{#					<input type="text" class="type" name="email" placeholder="Email">#}
+{#				</div>#}
 
-				<div class="info-line">
-					<i class="fas fa-user-circle icon-gradient"></i>
-					<input type="text" class="type" name="relationship" placeholder="Relationship">
-				</div>
 
-
-
-				<div class="info-line">
-					<i class="fas fa-sms icon-gradient"></i>
-					<input type="text" class="type" name="phone-number" placeholder="Phone Number">
-				</div>
-
-
-
-
-				<div class="info-line">
-					<i class="fas fa-map-marker-alt icon-gradient location"></i>
-					<input type="text" class="type" name="address" placeholder="Address">
-				</div>
-
-
-				<div class="info-line">
-					<i class="fas fa-envelope icon-gradient location"></i>
-					<input type="text" class="type" name="email" placeholder="Email">
-				</div>
-
-
-
+            {{ form.as_p }}
 			</section>
 
 			<section class="button-container">
-
-
 				<div class="update-contact">
 					<i id="save" class="fas fa-check-circle icon-gradient"></i>
-					<button type=" submit" class="button">Save Contact</button>
+					<button type="submit" class="button">Create Contact</button>
 				</div>
 			</section>
 
